@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Cart Page</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-paw"></i> Pawesace <i class="fas fa-paw"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Log In <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Create Account <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <container>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="card my-5 ml-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Billing Details</h5>
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company (optional)</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select class="form-control" id="country">
+                                  <option>Australia</option>
+                                  <option>Canada</option>
+                                  <option>England</option>
+                                  <option>Mexico</option>
+                                  <option>USA</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="streetAdress">Street Address</label>
+                                <input type="text" class="form-control" placeholder="Address Line 1" id="streetAdress">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Address Line 2">
+                            </div>
+                            <div class="form-group">
+                                <label for="town">Town/City</label>
+                                <input type="text" class="form-control" placeholder="City Name" id="town">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <select class="form-control" id="state">
+                                  <option>Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>Arizona</option>
+                                  <option>Arkansas</option>
+                                  <option>California</option>
+                                  <option>Colorado</option>
+                                  <option>Connecticut</option>
+                                  <option>Delaware</option>
+                                  <option>Florida</option>
+                                  <option>Georgia</option>
+                                  <option>Hawaii</option>
+                                  <option>Idaho</option>
+                                  <option>Illinois</option>
+                                  <option>Indiana</option>
+                                  <option>Iowa</option>
+                                  <option>Kansas</option>
+                                  <option>Kentucy</option>
+                                  <option>Louisiana</option>
+                                  <option>Maine</option>
+                                  <option>Maryland</option>
+                                  <option>Massachusetts</option>
+                                  <option>Michigan</option>
+                                  <option>Minnesota</option>
+                                  <option>Mississippi</option>
+                                  <option>Montana</option>
+                                  <option>Nebraska</option>
+                                  <option>Nevada</option>
+                                  <option>New Hampshire</option>
+                                  <option>New Jersey</option>
+                                  <option>New Mexico</option>
+                                  <option>New York</option>
+                                  <option>North Carloina</option>
+                                  <option>North Dakota</option>
+                                  <option>Ohio</option>
+                                  <option>Oklahoma</option>
+                                  <option>Oregon</option>
+                                  <option>Pennsylvania</option>
+                                  <option>Rhode Island</option>
+                                  <option>South Carolina</option>
+                                  <option>South Dakota</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Utah</option>
+                                  <option>Vermont</option>
+                                  <option>Virginia</option>
+                                  <option>Washingtion</option>
+                                  <option>West Virginia</option>
+                                  <option>Wisconsin</option>
+                                  <option>Wyoming</option>
+                                  <option>Not in the US</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" placeholder="(000)000-0000"
+                                id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="text" class="form-control" placeholder="someone@somplace.com"
+                                id="email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card mt-5 mr-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ship to a different Address?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Order Notes:</h6>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3 col-lg-6 col-sm-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Your Order</h5>
+                        <div class="row">
+                            <div class="col">Product</div>
+                            <div class="col">Total</div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">Item</div>
+                            <div class="col">00.00</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Subtotal</div>
+                            <div class="col">00.00</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Shipping</div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="shippingRadios" id="slow" value="option1" checked>
+                                    <label class="form-check-label" for="slow">
+                                Regular
+                              </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="shippingRadios" id="fast" value="option2">
+                                    <label class="form-check-label" for="fast">
+                                2 Day
+                              </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">Total</div>
+                            <div class="col">00.00x</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card col-lg-6 col-sm-12">
+                    <div class="card-body">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="paypal" value="option1" checked>
+                        <label class="form-check-label" for="paypal">
+                          PayPal
+                      </label>
+                      <br>
+                      <img src="https://www.j2store.org/images/extensions/payment_plugins/paypal_tm.png" style="width: 32px; height: 20px;">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="creditCard" value="option2">
+                        <label class="form-check-label" for="creditCard">
+                          Credit or Debit Card
+                      </label>
+                      <br>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png" style="width: 32px; height: 20px;">
+                      <img src="https://seeklogo.com/images/M/MasterCard-logo-92AB7D0014-seeklogo.com.png" style="width: 32px; height: 20px;">
+                      <img src="https://securecdn.pymnts.com/wp-content/uploads/2014/03/Discover-logo-e1416429693676.jpg" style="width: 32px; height: 20px;">
+                      <br>
+                      <button type="button" class="btn btn-dark my-2">Pay</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+
+    <footer class="page-footer bg-dark text-white font-small mdb-color pt-4 mt-4">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold pawasce">
+                        <i class="fas fa-paw"></i>
+                        Pawesace
+                        <i class="fas fa-paw"></i></h6>
+                    <p>High couture for pooches everywhere!</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                        <a href="#!">Dog Apparel</a>
+                    </p>
+                    <p>
+                        <a href="#!">Dog Accessories</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bowl/Feeding</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Mission, TX 10012, US</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2018 Copyright:
+                        <a href="http://www.valleytechnicalacademy.com/">
+                  <strong> Valley Tech Academy Team Paw</strong>
+                </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-google-plus"></i>
+                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>
